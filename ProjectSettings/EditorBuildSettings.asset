@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MarkerBasedExperience.unity
+    guid: 0a221a123b0344ba2a3a8afe23d5835c
+  - enabled: 1
+    path: Assets/Scenes/MarkerlessExperience.unity
+    guid: b6881c41b74ba4e388a248e3483d9020
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f0a99015451c942fe8d14c563516b57e,
       type: 2}
