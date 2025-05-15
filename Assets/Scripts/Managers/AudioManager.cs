@@ -7,7 +7,8 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     [SerializeField] private AudioSource musicAudioSource;
-    [SerializeField] private AudioSource sfxAudioSource;
+
+    private List<SFXSourceController> sfxSourceControllers;
 
     private void Awake()
     {
@@ -34,6 +35,27 @@ public class AudioManager : MonoBehaviour
         if (volume > 1 || volume < 0)
             return;
 
-        sfxAudioSource.volume = volume;
+        foreach (SFXSourceController sfxManager in sfxSourceControllers)
+        {
+            sfxManager.SetVolume(volume);
+        }
+    }
+
+    public void AddSFXSourceController(SFXSourceController sfxSourceController)
+    {
+        sfxSourceControllers.Add(sfxSourceController);
+    }
+
+    public void RemoveSFXSourceController(SFXSourceController sfxSourceController)
+    {
+        if (sfxSourceControllers.Contains(sfxSourceController))
+        {
+            sfxSourceControllers.Remove(sfxSourceController);
+        }
+    }
+
+    public void ClearSFXSourceControllers()
+    {
+        sfxSourceControllers.Clear();
     }
 }
