@@ -3823,6 +3823,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6156201015203437879}
+  - component: {fileID: 6322299960915952606}
   m_Layer: 0
   m_Name: gtr r33
   m_TagString: Untagged
@@ -3923,6 +3924,39 @@ Transform:
   - {fileID: 7756003221061622144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6322299960915952606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4018987092118617831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee0a3c09b2ebf4e8f9b4de1db95ed7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyPanelRenderers:
+  - {fileID: 4075878364872096415}
+  - {fileID: 4637320542237090147}
+  - {fileID: 6229881765140312627}
+  - {fileID: 7957064666052018744}
+  - {fileID: 296206539152933357}
+  - {fileID: 3738745405156551591}
+  - {fileID: 6556628981919100760}
+  - {fileID: 5016169039528099757}
+  - {fileID: 7828032133571515257}
+  - {fileID: 7026695878594350414}
+  - {fileID: 6769741191607410761}
+  bodyColorMaterial: {fileID: 2100000, guid: 5cdbb5a0861a44953b4dc775d06a56e1, type: 2}
+  bodyPanelMaterials: []
+  wheelRenderers:
+  - {fileID: 3050901278452528689}
+  - {fileID: 6719576715145193255}
+  - {fileID: 1526704874009015503}
+  - {fileID: 210087892910446071}
+  wheelMaterial: {fileID: 2100000, guid: a98d4cdd5ea464065ad5db907d57043d, type: 2}
+  wheelMaterials: []
 --- !u!1 &4037278051084976302
 GameObject:
   m_ObjectHideFlags: 0
