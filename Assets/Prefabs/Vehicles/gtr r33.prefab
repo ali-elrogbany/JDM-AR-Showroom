@@ -2114,6 +2114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7756003221061622144}
+  - component: {fileID: 9075435462213579341}
   m_Layer: 0
   m_Name: LeftDoor
   m_TagString: Untagged
@@ -2139,6 +2140,27 @@ Transform:
   - {fileID: 1707117624014271210}
   m_Father: {fileID: 6156201015203437879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &9075435462213579341
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370480341018518777}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 176d578295bab436ab4ec63b783fa8c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2382922716392288966
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,6 +3846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6156201015203437879}
   - component: {fileID: 6322299960915952606}
+  - component: {fileID: 3293773620950245069}
   m_Layer: 0
   m_Name: gtr r33
   m_TagString: Untagged
@@ -3957,6 +3980,22 @@ MonoBehaviour:
   - {fileID: 210087892910446071}
   wheelMaterial: {fileID: 2100000, guid: a98d4cdd5ea464065ad5db907d57043d, type: 2}
   wheelMaterials: []
+--- !u!114 &3293773620950245069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4018987092118617831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7c03d68ba76434e9d0ce85187c5a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationDuration: 0.5
+  doorAnimators:
+  - {fileID: 1966080286364795909}
+  - {fileID: 9075435462213579341}
 --- !u!1 &4037278051084976302
 GameObject:
   m_ObjectHideFlags: 0
@@ -5725,6 +5764,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7368797184809844461}
+  - component: {fileID: 1966080286364795909}
   m_Layer: 0
   m_Name: RightDoor
   m_TagString: Untagged
@@ -5750,6 +5790,27 @@ Transform:
   - {fileID: 3270299725790248272}
   m_Father: {fileID: 6156201015203437879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1966080286364795909
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7351025893150958123}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 528f032848c8e4d11a54b940bf032f42, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7352314694515084089
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,6 @@ public class VehicleColorController : MonoBehaviour
     {
         GetBodyPanelMaterials();
         GetWheelMaterials();
-        SetWheelsColor(Color.red);
     }
 
     private void GetBodyPanelMaterials()
