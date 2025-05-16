@@ -4,36 +4,49 @@ using UnityEngine;
 
 public class SFXSourceController : MonoBehaviour
 {
-    private AudioSource sfxSource;
+  private AudioSource sfxSource;
 
-    private void Awake()
+  private void Awake()
+  {
+    sfxSource = GetComponent<AudioSource>();
+
+    sfxSource.playOnAwake = false;
+    sfxSource.loop = false;
+
+    if (AudioManager.instance != null && sfxSource != null)
     {
-      sfxSource = GetComponent<AudioSource>();
-      
-      sfxSource.playOnAwake = false;
-      sfxSource.loop = false;
-
-      if (AudioManager.instance != null && sfxSource != null)
-      {
-        AudioManager.instance.AddSFXSourceController(this);
-      }  
+      AudioManager.instance.AddSFXSourceController(this);
     }
+  }
 
-    private void OnDestroy()
+  private void OnDestroy()
+  {
+    if (AudioManager.instance != null)
     {
-      if (AudioManager.instance != null)
-      {
-        AudioManager.instance.RemoveSFXSourceController(this);
-      }  
+      AudioManager.instance.RemoveSFXSourceController(this);
     }
+  }
 
-    public void SetVolume(float volume)
-    {
-        sfxSource.volume = volume;
-    }
+  public void SetVolume(float volume)
+  {
+    sfxSource.volume = volume;
+  }
 
-    public void PlayClip(AudioClip audioClip)
-    {
-        sfxSource.PlayOneShot(audioClip);
-    }
+  public void PlayClip(AudioClip audioClip)
+  {
+    PlayClip(audioClip, false);
+  }
+
+  public void PlayClip(AudioClip audioClip, bool loop)
+  {
+    sfxSource.clip = audioClip;
+    sfxSource.loop = loop;
+
+    sfxSource.Play();
+  }
+
+  public void StopAudio()
+  {
+    sfxSource.Stop();
+  }
 }

@@ -16,10 +16,8 @@ public class VehicleDoorsController : MonoBehaviour
 
     public void ToggleDoors()
     {
-        Debug.Log("Toggle1");
         if (canToggle)
         {
-            Debug.Log("Toggle2");
             StartCoroutine(PerformToggleDoors());
         }
     }
