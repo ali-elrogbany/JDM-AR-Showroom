@@ -12,19 +12,6 @@ public class SFXSourceController : MonoBehaviour
 
     sfxSource.playOnAwake = false;
     sfxSource.loop = false;
-
-    if (AudioManager.instance != null && sfxSource != null)
-    {
-      AudioManager.instance.AddSFXSourceController(this);
-    }
-  }
-
-  private void OnDestroy()
-  {
-    if (AudioManager.instance != null)
-    {
-      AudioManager.instance.RemoveSFXSourceController(this);
-    }
   }
 
   public void SetVolume(float volume)
@@ -48,5 +35,19 @@ public class SFXSourceController : MonoBehaviour
   public void StopAudio()
   {
     sfxSource.Stop();
+  }
+
+  public IEnumerator FadeAudio(float startVolume, float endVolume, float duration)
+  {
+      float elapsedTime = 0f;
+
+      while (elapsedTime < duration)
+      {
+          sfxSource.volume = Mathf.Lerp(startVolume, endVolume, elapsedTime / duration);
+          elapsedTime += Time.deltaTime;
+          yield return null;
+      }
+
+      sfxSource.volume = endVolume;
   }
 }

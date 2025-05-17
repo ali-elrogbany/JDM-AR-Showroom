@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
+    [SerializeField] AudioMixer audioMixer;
     [SerializeField] private AudioSource musicAudioSource;
-
-    private List<SFXSourceController> sfxSourceControllers;
 
     private void Awake()
     {
@@ -35,27 +35,7 @@ public class AudioManager : MonoBehaviour
         if (volume > 1 || volume < 0)
             return;
 
-        foreach (SFXSourceController sfxManager in sfxSourceControllers)
-        {
-            sfxManager.SetVolume(volume);
-        }
-    }
-
-    public void AddSFXSourceController(SFXSourceController sfxSourceController)
-    {
-        sfxSourceControllers.Add(sfxSourceController);
-    }
-
-    public void RemoveSFXSourceController(SFXSourceController sfxSourceController)
-    {
-        if (sfxSourceControllers.Contains(sfxSourceController))
-        {
-            sfxSourceControllers.Remove(sfxSourceController);
-        }
-    }
-
-    public void ClearSFXSourceControllers()
-    {
-        sfxSourceControllers.Clear();
+        float dB = Mathf.Log10(Mathf.Clamp(volume, 0.0001f, 1f)) * 20;
+        audioMixer.SetFloat("SFXVolume", dB);
     }
 }
