@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: cbc701c3097ee4434b92ab8917abbb79
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meo_turbo_Gray
+    second: {fileID: 2100000, guid: 8d0d18c7f0619474187fb0845463fb48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meo_turbo_black
+    second: {fileID: 2100000, guid: 03012d48ff293403fae68c7b59d3f5f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meo_turbo_chrome
+    second: {fileID: 2100000, guid: 5ba49ee9c592f4acab1ee9afd9e35e84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meo_turbo_gold
+    second: {fileID: 2100000, guid: a8f8c1abc77264821ab22b679e17767e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meo_turbo_matblack
+    second: {fileID: 2100000, guid: aaca595d8a2a7403cbf1d1ce9b815d2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meo_turbo_red
+    second: {fileID: 2100000, guid: 41a4d3922a4c243b3afe05d7cc5821f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scene_-_Root.002
+    second: {fileID: 2100000, guid: 5100a5c6ddbd447a583a0f54c16541a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amdb11_brake.002
+    second: {fileID: 2100000, guid: 3a5336b2a70224b68b396850ff8c9434, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amdb11_caliper.002
+    second: {fileID: 2100000, guid: 04f7d23d8a4b240c79e35409f87ca20e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amdb11_misc.002
+    second: {fileID: 2100000, guid: 13a629ed2587f4de49d0538148fa7cb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amdb11_misc_chrome.002
+    second: {fileID: 2100000, guid: 0d112b7c76bb844108e5e323eaed1698, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grille
+    second: {fileID: 2100000, guid: a020872064cb24329861f576706009e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gtr_interior
+    second: {fileID: 2100000, guid: 43b49f4d10fd24304bcb0ede19cbb80c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mirror
+    second: {fileID: 2100000, guid: 710de8918b3c4480281edf69699a975b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35
+    second: {fileID: 2100000, guid: e6c6e8ae435bb4f1c9be51161d6c35b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_badges
+    second: {fileID: 2100000, guid: f0a9dcbe06fb647ae91d5d60bd4b7eb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_carpet
+    second: {fileID: 2100000, guid: 51baf7190442845b6813d1d51f0b8c72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_cf
+    second: {fileID: 2100000, guid: c9c6ead0820ad456db820a4f1cfa64ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_chassis
+    second: {fileID: 2100000, guid: 9512e5b04b027402a97af536c5159e92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_cloth
+    second: {fileID: 2100000, guid: be7353e95980542d4842c90671f41e1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_display
+    second: {fileID: 2100000, guid: 2a043041a3633450a8efa54126456012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_display_segment_bottom
+    second: {fileID: 2100000, guid: 859323cf73c4b46da9f24affa2d69b35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_display_segment_center
+    second: {fileID: 2100000, guid: 5b8fe18ba9f5c4d6196482d7af17ded8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_display_segment_lowerleft
+    second: {fileID: 2100000, guid: 6b9a6c6a3a1a84d34902e7e09eab9fb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_display_segment_lowerright
+    second: {fileID: 2100000, guid: 2205f66afde314de490a506f59056a2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_display_segment_top
+    second: {fileID: 2100000, guid: 9c6a51f45592c49518cfbb1bca3a123c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_display_segment_upperleft
+    second: {fileID: 2100000, guid: fe65403b8d0b24743b21023458966dea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_display_segment_upperright
+    second: {fileID: 2100000, guid: 30d3484c6e38f42babe8b75e0a38f01c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_engine
+    second: {fileID: 2100000, guid: 68de3c61c21a24b9c9b7ccf299c20c5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_engines
+    second: {fileID: 2100000, guid: 06682471e41d344959f96eda4a88ef43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_gauges
+    second: {fileID: 2100000, guid: 3641fdc0a156b40158beb552ed893468, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_glass
+    second: {fileID: 2100000, guid: 0442fdc6bf5384b2aa2b8bd3c0e12f9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_glass.001
+    second: {fileID: 2100000, guid: 237c2a3fb37744cb9b3e81aa444ae99b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_headlight
+    second: {fileID: 2100000, guid: 7e9df96a1f8ce4c11a3f10ee8e390d04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_highbeam
+    second: {fileID: 2100000, guid: 250f376991ea8421c81c13bd5e1d9d50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_interior
+    second: {fileID: 2100000, guid: a981783c1c5cc422c909390bb1a43107, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_leather
+    second: {fileID: 2100000, guid: d2a9c340a3051408c8e70ee9052bbf47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_leather_perf
+    second: {fileID: 2100000, guid: c52f7e49ae5054857afd3af515c2f90e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_leather_stitching
+    second: {fileID: 2100000, guid: eefe37cbc3b754cc19119839c4f80954, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_lights
+    second: {fileID: 2100000, guid: 3e888f47d201a4e15996ed3e26b68256, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_mesh
+    second: {fileID: 2100000, guid: 1f032f31872b24e3c8c1305cac03697a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_misc
+    second: {fileID: 2100000, guid: e69986bb113da420c91d4e867c64aa2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_paint
+    second: {fileID: 2100000, guid: 1d4e0f27e8ddb4595ab0b19002091f86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_plastic
+    second: {fileID: 2100000, guid: 3aa5390b2753a4c9ca4ca6fcf946b31e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_plastic_grey
+    second: {fileID: 2100000, guid: a68abc5928479465589bcb388ee4fe7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_screen
+    second: {fileID: 2100000, guid: 9893ff463904545b1af086c5720bff8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_signal_R
+    second: {fileID: 2100000, guid: 803f7b41cf66a4ba5ba5ba0b972d39be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_signal_R_2017
+    second: {fileID: 2100000, guid: 4848f8f9d44cd445fa6f5933aee8efde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_signal_R_2017.001
+    second: {fileID: 2100000, guid: 634c3e42731aa4c87a54063998737d86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_steeringwheel
+    second: {fileID: 2100000, guid: e45313e1ac6d84145b06e59244259241, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_symbols_2017
+    second: {fileID: 2100000, guid: 33f872599a8614468a37c23e2a884ed4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_taillight_2017
+    second: {fileID: 2100000, guid: 1d227363db3314d1f9674e10f90bd24e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: r35_wheel_05a
+    second: {fileID: 2100000, guid: 0c6245a31ac4041b1a27ffe60238953b, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
