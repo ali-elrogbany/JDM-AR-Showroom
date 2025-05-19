@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7681456957834621711}
   - component: {fileID: 7430059152205235166}
   m_Layer: 0
-  m_Name: Placeable GTR R33
+  m_Name: R33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

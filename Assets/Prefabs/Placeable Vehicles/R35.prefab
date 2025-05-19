@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6626817051102315634}
   - component: {fileID: 1455100221277037794}
   m_Layer: 0
-  m_Name: Placeable GTR R35
+  m_Name: R35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
