@@ -38,4 +38,17 @@ public class AudioManager : MonoBehaviour
         float dB = Mathf.Log10(Mathf.Clamp(volume, 0.0001f, 1f)) * 20;
         audioMixer.SetFloat("SFXVolume", dB);
     }
+
+    public float GetMusicVolume()
+    {
+        return musicAudioSource.volume;
+    }
+
+    public float GetSFXVolume()
+    {
+        float volume;
+        audioMixer.GetFloat("SFXVolume", out volume);
+
+        return volume;
+    }
 }
