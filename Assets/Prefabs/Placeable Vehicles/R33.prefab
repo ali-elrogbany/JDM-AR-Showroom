@@ -50,7 +50,13 @@ MonoBehaviour:
   vehicleDoorsController: {fileID: 4793302555607250219}
   vehicleAudioManager: {fileID: 1038302492532563909}
   mainCanvas: {fileID: 1422595073701650299}
+  specsCanvas: {fileID: 949205537672830119}
   colorPickerCanvas: {fileID: 692990464922538222}
+  makeText: {fileID: 1341686130346243435}
+  modelText: {fileID: 8997555977300980930}
+  yearText: {fileID: 7929650581835685552}
+  engineText: {fileID: 3696639783629541191}
+  vehicleInfoSO: {fileID: 11400000, guid: 0d12436a86407434c9a24f739016dd18, type: 2}
 --- !u!1001 &6959420503330638028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -201,9 +207,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 825019825365631566, guid: 53329c06fc64044bba142e1eeb4c0647,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825019825365631566, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7430059152205235166}
+    - target: {fileID: 1053581882444142204, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_text
+      value: 1998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038276230718979086, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_text
+      value: Skyline GT-R (R33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259315734168904565, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2994662482835583975, guid: 53329c06fc64044bba142e1eeb4c0647,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -229,6 +255,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3660740141842744570, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660740141842744570, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660740141842744570, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660740141842744570, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4064707058982842510, guid: 53329c06fc64044bba142e1eeb4c0647,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -244,6 +290,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7430059152205235166}
+    - target: {fileID: 4368831116223363306, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368831116223363306, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7430059152205235166}
+    - target: {fileID: 4368831116223363306, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnToggleColorPickerCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 4381372606720971947, guid: 53329c06fc64044bba142e1eeb4c0647,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -269,6 +330,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6042087282818090891, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_text
+      value: RB26DETT
+      objectReference: {fileID: 0}
     - target: {fileID: 7056523249051179681, guid: 53329c06fc64044bba142e1eeb4c0647,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -276,14 +342,39 @@ PrefabInstance:
       objectReference: {fileID: 7430059152205235166}
     - target: {fileID: 7870057712334858570, guid: 53329c06fc64044bba142e1eeb4c0647,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870057712334858570, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7430059152205235166}
+    - target: {fileID: 7870057712334858570, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnToggleSpecsCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051195628928023929, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7430059152205235166}
+    - target: {fileID: 8051195628928023929, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnToggleCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 8072066426016180222, guid: 53329c06fc64044bba142e1eeb4c0647,
         type: 3}
       propertyPath: placeableVehicleController
       value: 
       objectReference: {fileID: 7430059152205235166}
+    - target: {fileID: 8217508556498075047, guid: 53329c06fc64044bba142e1eeb4c0647,
+        type: 3}
+      propertyPath: m_text
+      value: Nissan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -295,18 +386,72 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6959420503330638028}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &949205537672830119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7906233503313122411, guid: 53329c06fc64044bba142e1eeb4c0647,
+    type: 3}
+  m_PrefabInstance: {fileID: 6959420503330638028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1341686130346243435 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8217508556498075047, guid: 53329c06fc64044bba142e1eeb4c0647,
+    type: 3}
+  m_PrefabInstance: {fileID: 6959420503330638028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1422595073701650299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8298663780928378807, guid: 53329c06fc64044bba142e1eeb4c0647,
     type: 3}
   m_PrefabInstance: {fileID: 6959420503330638028}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3696639783629541191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6042087282818090891, guid: 53329c06fc64044bba142e1eeb4c0647,
+    type: 3}
+  m_PrefabInstance: {fileID: 6959420503330638028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7290415557689025064 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 412103838403586788, guid: 53329c06fc64044bba142e1eeb4c0647,
     type: 3}
   m_PrefabInstance: {fileID: 6959420503330638028}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7929650581835685552 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1053581882444142204, guid: 53329c06fc64044bba142e1eeb4c0647,
+    type: 3}
+  m_PrefabInstance: {fileID: 6959420503330638028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8997555977300980930 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2038276230718979086, guid: 53329c06fc64044bba142e1eeb4c0647,
+    type: 3}
+  m_PrefabInstance: {fileID: 6959420503330638028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8012166447503223782
 PrefabInstance:
   m_ObjectHideFlags: 0

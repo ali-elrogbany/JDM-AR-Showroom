@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlaceableVehicleController : MonoBehaviour
@@ -11,11 +12,22 @@ public class PlaceableVehicleController : MonoBehaviour
 
     [Header("Canvases References")]
     [SerializeField] private GameObject mainCanvas;
+    [SerializeField] private GameObject specsCanvas;
     [SerializeField] private GameObject colorPickerCanvas;
+
+    [Header("Spec Texts")]
+    [SerializeField] private TMP_Text makeText;
+    [SerializeField] private TMP_Text modelText;
+    [SerializeField] private TMP_Text yearText;
+    [SerializeField] private TMP_Text engineText;
+
+    [Header("Scriptable Object References")]
+    [SerializeField] private VehicleInfoSO vehicleInfoSO;
 
     [Header("Local Variables")]
     private PaintType paintType = PaintType.BODY;
     private bool isMainCanvasOpen = true;
+    private bool isSpecsCanvasOpen = true;
     private bool isColorPickerCanvasOpen = false;
 
     public void OnToggleEngine()
@@ -45,12 +57,36 @@ public class PlaceableVehicleController : MonoBehaviour
         }
     }
 
-    public void OnToggleCanvas(bool isMainCanvasOpen)
+    public void OnToggleCanvas()
     {
-        this.isMainCanvasOpen = isMainCanvasOpen;
-        this.isColorPickerCanvasOpen = !isMainCanvasOpen;
+        isMainCanvasOpen = true;
+        isSpecsCanvasOpen = false;
+        isColorPickerCanvasOpen = false;
 
         mainCanvas.SetActive(isMainCanvasOpen);
+        specsCanvas.SetActive(isSpecsCanvasOpen);
+        colorPickerCanvas.SetActive(isColorPickerCanvasOpen);
+    }
+
+    public void OnToggleSpecsCanvas()
+    {
+        isMainCanvasOpen = false;
+        isSpecsCanvasOpen = true;
+        isColorPickerCanvasOpen = false;
+
+        mainCanvas.SetActive(isMainCanvasOpen);
+        specsCanvas.SetActive(isSpecsCanvasOpen);
+        colorPickerCanvas.SetActive(isColorPickerCanvasOpen);
+    }
+
+    public void OnToggleColorPickerCanvas()
+    {
+        isMainCanvasOpen = false;
+        isSpecsCanvasOpen = false;
+        isColorPickerCanvasOpen = true;
+
+        mainCanvas.SetActive(isMainCanvasOpen);
+        specsCanvas.SetActive(isSpecsCanvasOpen);
         colorPickerCanvas.SetActive(isColorPickerCanvasOpen);
     }
 }
