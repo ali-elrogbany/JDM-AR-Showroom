@@ -30,6 +30,27 @@ public class PlaceableVehicleController : MonoBehaviour
     private bool isSpecsCanvasOpen = true;
     private bool isColorPickerCanvasOpen = false;
 
+    [Header("References")]
+    private AudioSource voiceoverSource;
+
+    private void Awake()
+    {
+        voiceoverSource = GetComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
+        FillSpecs();
+    }
+
+    private void FillSpecs()
+    {
+        makeText.text = vehicleInfoSO.make;
+        modelText.text = vehicleInfoSO.model;
+        yearText.text = vehicleInfoSO.year;
+        engineText.text = vehicleInfoSO.engine;
+    }
+
     public void OnToggleEngine()
     {
         vehicleAudioManager.ToggleEngine();
@@ -55,6 +76,15 @@ public class PlaceableVehicleController : MonoBehaviour
         {
             vehicleColorController.SetWheelsColor(color);
         }
+    }
+
+    public void OnPlayVoiceover()
+    {
+        voiceoverSource.Stop();
+
+        voiceoverSource.clip = vehicleInfoSO.voiceover;
+
+        voiceoverSource.Play();
     }
 
     public void OnToggleCanvas()

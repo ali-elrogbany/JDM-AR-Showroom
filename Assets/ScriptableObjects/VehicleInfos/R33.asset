@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970ed87c8c75b43988a9f2fb83298e2b, type: 3}
   m_Name: R33
   m_EditorClassIdentifier: 
-  make: 
-  model: 
-  year: 
-  engine: 
-  voiceover: {fileID: 0}
+  make: Nissan
+  model: Skyline GT-R (R33)
+  year: 1998
+  engine: RB26DETT
+  voiceover: {fileID: 8300000, guid: c245bf4a4cfaf47409f6cf5eb7ce5773, type: 3}
