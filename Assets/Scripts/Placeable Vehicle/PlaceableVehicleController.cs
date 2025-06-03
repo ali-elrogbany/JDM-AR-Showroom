@@ -9,6 +9,7 @@ public class PlaceableVehicleController : MonoBehaviour
     [SerializeField] private VehicleColorController vehicleColorController;
     [SerializeField] private VehicleDoorsController vehicleDoorsController;
     [SerializeField] private VehicleAudioManager vehicleAudioManager;
+    [SerializeField] private List<Rotator> vehicleRotators;
 
     [Header("Canvases References")]
     [SerializeField] private GameObject mainCanvas;
@@ -59,6 +60,14 @@ public class PlaceableVehicleController : MonoBehaviour
     public void OnToggleDoors()
     {
         vehicleDoorsController.ToggleDoors();
+    }
+
+    public void OnToggleRotation()
+    {
+        foreach (Rotator rotator in vehicleRotators)
+        {
+            rotator.ToggleRotation();
+        }
     }
 
     public void OnChangePaintType(bool isBodyPaint)
